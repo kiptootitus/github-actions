@@ -1,6 +1,6 @@
 # github-actions
 
-    - GitHub Actions is a CI/CD tool that allows you to automate your build, test, and deployment pipeline within your repositories.
+- GitHub Actions is a CI/CD tool that allows you to automate your build, test, and deployment pipeline within your repositories.
 
 ## Workflows
 
@@ -8,7 +8,7 @@
 - A repo can have mutliple workflows
 
 ### Workflows components:
- 1. Actions
-    - These are reusable tasks that perfom secific jobs
- 2. 
 
+1. Actions
+   - These are reusable tasks that perfom secific jobs
+2.
