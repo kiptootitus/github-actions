@@ -3,7 +3,7 @@ name: "Webhook Event example"
 on:
   repository_dispatch:
     types:
-      - custom_webhook
+      - webhook
 
 jobs:
   respond-to-dispatch:
@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Run a script
-        run: echo "Event of type $GITHUB_EVENT_NAME"
+      - name: "Run a script"
+        run: 'echo "Event of type: $GITHUB_EVENT_NAME"'
       
