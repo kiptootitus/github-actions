@@ -22,15 +22,3 @@ jobs:
       - name: Check if string ends with
         if: endsWith('Hello world', 'ld')
         run: echo "The string ends with 'ld'."
-
-      - name: Format and echo string
-        run: echo ${{ format('Hello {0} {1} {2}', 'Mona', 'the', 'Octocat') }}
-
-      - name: Check if issue event has labels
-        if: github.event.issue != null
-        run: 'echo "Issue labels: ${{ join(github.event.issue.labels.*.name, ', ') }}"'
-        
-      - name: Convert job context to JSON
-        run: 'echo "Job context in JSON: ${{ toJSON(github.job) }}"'
-      - name: Parse JSON string
-        run: echo "Parsed JSON: ${{ fromJSON('{"hello": "world"}').hello }}"
