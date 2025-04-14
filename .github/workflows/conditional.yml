@@ -1,0 +1,17 @@
+name: "Example of Workflow"
+
+on: [push]
+
+jobs:
+  hello-word:
+    if: github.repository == 'kiptootitus/github-actions'
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Hello World!"
+        run: echo "Hello world!"
+  
+  good-byee:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Goodbyee Titus"
+        run: echo "Goodbyee!"
