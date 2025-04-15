@@ -1,0 +1,10 @@
+name: "Workflow Commands"
+
+on: [push]
+
+jobs:
+  my-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "My Step"
+        run: echo "Hello! {github.action}"
