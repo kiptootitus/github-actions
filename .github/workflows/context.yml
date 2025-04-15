@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: "My Step"
         run: |
-          echo "Action! ${MY_ACTION}"
+          echo "Action! $MY_ACTION"
           echo "Actor! $MY_ACTOR"
           
         env:
